@@ -1,0 +1,25 @@
+week5:
+windows cmd:
+ipconfig
+
+kali terminal:
+sudo service apache2 start
+sudo service mysql start 
+ipconfig
+
+windows cmd:
+ping (ip_address)
+
+kali terminal:
+sudo iptables -A INPUT -s (ip_address) -j DROP
+sudo iptables -D INPUT -s (ip_address) -j DROP
+
+windows cmd:
+ping (ip_address)
+
+kali terminal:
+sudo iptables -A INPUT -s (ip_address) -p tcp --destination-port 80 -j DROP
+sudo iptables -D INPUT -s (ip_address) -p tcp --destination-port 80 -j DROP
+
+
+in browser search: (ip_address)

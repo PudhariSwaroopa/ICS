@@ -1,0 +1,15 @@
+week2:
+openssl rsa -pubin -inform PEM -text -noout <pubkey.pem
+python -m venv csme
+source csme/bin/activate
+pip install pycryptodome
+python exploit.py
+ls
+cat private.pem
+touch dec.txt
+ls
+openssl pkeyult -decrypt -in exc.text -out dec.txt -inkey private.pem
+cat dec.txt
+
+
+

@@ -1,0 +1,29 @@
+week3:
+
+cd /var/www/html
+sudo git clone https://github.com/digininja/DVWA.git
+ls
+sudo mv DVWA dvwa
+sudo chmod -R 777 dvwa
+cd dvwa
+ls
+cd config
+ls
+sudo cp config.inc.php.dist config.inc.php
+sudo nano config.inc.php.dist
+cat config.inc.php.dist
+sudo service mysql start
+sudo mysql -u root -p
+Maria DB[(none)]>create database dvwa;
+Maria DB[(none)]>create username csme@127.0.0.1 identified by password;
+Maria DB[(none)]>grant all on dvwa.* to csme@127.0.0.1;
+Maria DB[(none)]>exit;
+cd /etc/php/8.4/apache2
+ls
+sudo nano php.ini
+(ctrl+w -> type fopen -> enter -> ctrl+x -> enter y -> enter)
+sudo service apache2 start
+sudeo service mysql start
+
+in browser: 127.0.0.1/dvwa
+

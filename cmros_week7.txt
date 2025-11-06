@@ -1,0 +1,17 @@
+week7:
+
+ssh test@(ip_address) -p 13652
+
+
+cmros vm:
+cd ..
+cd home
+ls
+cd test
+ls
+cd desktop
+ls
+cat s3cr3t.txt
+nano s3cr3t.txt
+(change text)
+cat s3cr3t.txt
