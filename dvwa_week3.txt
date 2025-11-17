@@ -10,8 +10,8 @@ ls
 cd config
 ls
 sudo cp config.inc.php.dist config.inc.php
-sudo nano config.inc.php.dist
-cat config.inc.php.dist
+sudo nano config.inc.php
+cat config.inc.php
 sudo service mysql start
 sudo mysql -u root -p
 Maria DB[(none)]>create database dvwa;
@@ -23,7 +23,7 @@ ls
 sudo nano php.ini
 (ctrl+w -> type fopen -> enter -> ctrl+x -> enter y -> enter)
 sudo service apache2 start
-sudeo service mysql start
+sudo service mysql start
 
 in browser: 127.0.0.1/dvwa
 
